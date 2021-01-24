@@ -16,7 +16,7 @@ const Discord = require("discord.js");
 const ms = require("ms");
 const enmap = require("enmap");
 const moment = require("moment");
-
+client.login(token);
 const client = new Discord.Client();
 const db = new enmap({ name: "test" });
 
@@ -64,4 +64,4 @@ message.author.send("<#id channel>")
 
 
   
-client.login("");
+client.login(token);
