@@ -25,7 +25,7 @@ client.on("ready", () => {
   console.log('By black jack');/////BLACK JACK 
 console.log('♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔');
 console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setActivity(`${prefix}help | CREATED BY BLACK JACK ${client.guilds.cache.size}`)///////shtek bnwsa
+  client.user.setActivity(`PARTNER | CREATED BY BLACK JACK ${client.guilds.cache.size}`)///////shtek bnwsa
  client.user.setStatus("dnd")/////ba dly xot statusek bnwsa
   console.log(`Logined`)
 })
