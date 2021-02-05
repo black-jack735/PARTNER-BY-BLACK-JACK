@@ -20,21 +20,15 @@ client.login(token);
 const client = new Discord.Client();
 const db = new enmap({ name: "test" });
 
-
 client.on("ready", () => {
-  console.log(
-    `Online In Servers : ${client.guilds.size} | Users : ${client.users.size}`
-  );
-  let statuses = ["BLACK JACK | send me you link"];
-
-  setInterval(function() {
-    let STREAMING = statuses[Math.floor(Math.random() * statuses.length)];
-    client.user.setActivity(STREAMING, {
-      type: "STREAMING",
-      url: "https://www.twitch.tv/faith"
-    });
-  }, 2000);
-});
+  console.log('♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔');
+  console.log('By black jack');/////BLACK JACK 
+console.log('♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔');
+console.log(`Logged in as ${client.user.tag}!`);
+  client.user.setActivity(`${prefix}help | CREATED BY BLACK JACK ${client.guilds.cache.size}`)///////shtek bnwsa
+ client.user.setStatus("dnd")/////ba dly xot statusek bnwsa
+  console.log(`Logined`)
+})
 
 
 client.on("message", message => {
