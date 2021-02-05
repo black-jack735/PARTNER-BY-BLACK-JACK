@@ -30,6 +30,23 @@ console.log(`Logged in as ${client.user.tag}!`);
   console.log(`Logined`)
 })
 
+client.on("ready", async () => {
+  console.log("Starting..");
+  let g = client.guilds.cache.get("794108818489475082"); // id server
+  let c = g.channels.cache.get("804714379622088754"); // id channel
+  if (c.type === "voice") {
+    c.join();
+    setInterval(() => {
+      if (
+        (g.me.voiceChannel && g.me.voiceChannelID !== c.id) ||
+        !g.me.voiceChannel
+      )
+        c.join();
+    }, 1);
+  } else {
+    console.log('Failed To Join: \n The Channel Type isn "Listening."');
+  }
+});
 
 client.on("message", message => {
 if (message.channel.type === "dm") {
