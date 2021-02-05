@@ -20,22 +20,6 @@ client.login(token);
 const client = new Discord.Client();
 const db = new enmap({ name: "test" });
 
-const prefix = = 'prefix'
-
-client.on("ready", () => {
-  console.log(
-    `Online In Servers : ${client.guilds.size} | Users : ${client.users.size}`
-  );
-  let statuses = ["Partner | send me you link"];
-
-  setInterval(function() {
-    let STREAMING = statuses[Math.floor(Math.random() * statuses.length)];
-    client.user.setActivity(STREAMING, {
-      type: "STREAMING",
-      url: "https://www.twitch.tv/faith"
-    });
-  }, 2000);
-});
 
 client.on("ready", () => {
   console.log(
